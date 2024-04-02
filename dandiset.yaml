@@ -37,11 +37,17 @@ contributor:
   schemaKey: Person
 dateCreated: '2024-04-02T05:00:25.799442+00:00'
 description: 'The dataset contains neural activity from a period of open loop calibration
-  from a participant enrolled in --- .
+  from a human participant with an intracortical brain computer interface. This data
+  was collected under an Investigational
 
-  Data was recorded from two 96-channel intracortical electrode arrays in the hand
-  "knob" area . The 7DoF are: 3D endpoint translation (x,y,z) 1D orientation (roll),
-  and 3D grasp (flex/ext of thumb, index, ring, flex/ext of ring/pinky, thumb abduction).
+  Device Exemption from the Food and Drug Administration and approved by the Institutional
+  Review Board at the University of Pittsburgh (Pittsburgh, Pennsylvania), registered
+  at ClinicalTrials.gov (NCT01894802). The clinical trial is an early feasibility
+  study with a primary outcome of evaluating the safety of an intracortical brain–computer
+  interface for long-term neural recording and stimulation. Data was recorded from
+  two 96-channel intracortical electrode arrays in the hand "knob" area . The 7DoF
+  are: 3D endpoint translation (x,y,z) 1D orientation (roll), and 3D grasp (flex/ext
+  of thumb, index, ring, flex/ext of ring/pinky, thumb abduction).
 
   On each trial, audiovisual cues indicated to the participant to attempt a particular
   reach or grasp involving a combination of the listed degrees of freedom.
