@@ -2,6 +2,7 @@
 # It can be edited online at https://dandiarchive.org/dandiset/000954
 # and obtained from the dandiarchive.
 '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -9,15 +10,30 @@ assetsSummary:
   numberOfBytes: 0
   numberOfFiles: 0
   schemaKey: AssetsSummary
-citation: 'Ye, Joel (2024) FALCON Benchmark H1: Human 7DoF Reach and Grasp Motor BCI
-  (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000954/draft'
+citation: 'Ye, Joel; Jennifer L. Collinger; Robert Gaunt (2024) FALCON Benchmark H1:
+  Human 7DoF Reach and Grasp Motor BCI (Version draft) [Data set]. DANDI archive.
+  https://dandiarchive.org/dandiset/000954/draft'
 contributor:
 - affiliation: []
   email: joelye9@gmail.com
+  identifier: 0000-0002-1149-6035
   includeInCitation: true
   name: Ye, Joel
   roleName:
   - dcite:ContactPerson
+  - dcite:DataCurator
+  schemaKey: Person
+- identifier: 0000-0002-4517-5395
+  includeInCitation: true
+  name: Jennifer L. Collinger
+  roleName:
+  - dcite:ContactPerson
+  schemaKey: Person
+- email: rag53@pitt.edu
+  includeInCitation: true
+  name: Robert Gaunt
+  roleName:
+  - dcite:Supervision
   schemaKey: Person
 dateCreated: '2024-04-02T05:00:25.799442+00:00'
 description: 'The dataset contains neural activity from a period of open loop calibration
@@ -28,16 +44,64 @@ description: 'The dataset contains neural activity from a period of open loop ca
   and 3D grasp (flex/ext of thumb, index, ring, flex/ext of ring/pinky, thumb abduction).
 
   On each trial, audiovisual cues indicated to the participant to attempt a particular
-  reach or grasp involving a combination of the listed DoF.'
+  reach or grasp involving a combination of the listed degrees of freedom.
+
+
+  By downloading this dataset, you are agreeing to terms of the following Data Use
+  Agreement:
+
+  - I will receive access to de-identified data and will not attempt to establish
+  the identity of or attempt to contact any of the subjects.
+
+  - I will not attempt to make direct contact with PIs, affiliated data partner PIs,
+  or staff at sites concerning the specific results of individual subjects. Data partner
+  PIs may be contacted about potential collaboration opportunities.
+
+  - I will not further disclose these data beyond the uses outlined in this agreement
+  and my data use application and understand that redistribution of data in any manner
+  is prohibited.
+
+  - I will require anyone on my team who utilizes these data or anyone with whom I
+  share these data to comply with this Data Use Agreement.
+
+
+  '
+ethicsApproval: []
 id: DANDI:000954/draft
 identifier: DANDI:000954
+keywords: []
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000954/versions/draft/assets/
 name: 'FALCON Benchmark H1: Human 7DoF Reach and Grasp Motor BCI'
+protocol: []
+relatedResource:
+- identifier: 10.1016/S0140-6736(12)61816-9
+  name: 'Ten-dimensional anthropomorphic arm control in a human brain−machine interface:
+    difficulties, solutions, and limitations'
+  relation: dcite:IsDescribedBy
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://iopscience.iop.org/article/10.1088/1741-2560/12/1/016011#jne505388f1
+- identifier: 10.1016/S0140-6736(12)61816-9
+  name: High-performance neuroprosthetic control by an individual with tetraplegia
+  relation: dcite:IsDescribedBy
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://pubmed.ncbi.nlm.nih.gov/23253623/
+- identifier: 10.1126/science.abd0380
+  name: A brain-computer interface that evokes tactile sensations improves robotic
+    arm control
+  relation: dcite:IsDescribedBy
+  repository: ''
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8715714/
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
+studyTarget: []
 url: https://dandiarchive.org/dandiset/000954/draft
 version: draft
+wasGeneratedBy: []
