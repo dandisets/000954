@@ -7,9 +7,26 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 102258934
+  numberOfFiles: 40
+  numberOfSubjects: 3
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9606
+    name: Homo sapiens - Human
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
 citation: 'Ye, Joel; Jennifer L. Collinger; Robert Gaunt (2024) FALCON Benchmark H1:
   Human 7DoF Reach and Grasp Motor BCI (Version draft) [Data set]. DANDI archive.
   https://dandiarchive.org/dandiset/000954/draft'
@@ -51,6 +68,22 @@ description: 'The dataset contains neural activity from a period of open loop ca
 
   On each trial, audiovisual cues indicated to the participant to attempt a particular
   reach or grasp involving a combination of the listed degrees of freedom.
+
+
+  This dataset is part of the FALCON benchmark: https://snel-repo.github.io/falcon.
+  The datafile contains the following data in the acquisition fields: 7D kinematics
+  (`OpenLoopKinematics`), trial numbers (`TrialNum`), and metadata for FALCON evaluation
+  (`eval_mask`, `Blacklist`). The datafile also contains multi-unit spiking activity
+  in the `units` field.
+
+
+  As part of the FALCON challenge, dataset files are released in three ways. The held-in-calib
+  data includes many trials of data intended for calibration of decoders in the FALCON
+  challenge. The held-in-minival data is a small subset of the held-in-calib data
+  intended for FALCON models to validate submission format. Lastly, held-out-calib
+  data are separate sessions of data from held-in-calib, but have much fewer trials,
+  intended to be used for few-shot recalibration. Please bear in mind these factors
+  if making use of this dataset for purposes outside of the FALCON Benchmark.
 
 
   By downloading this dataset, you are agreeing to terms of the following Data Use
