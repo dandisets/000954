@@ -105,7 +105,11 @@ description: 'The dataset contains neural activity from a period of open loop ca
 
 
   '
-ethicsApproval: []
+ethicsApproval:
+- contactPoint:
+    schemaKey: ContactPoint
+  identifier: ClinicalTrials.gov (NCT01894802)
+  schemaKey: EthicsApproval
 id: DANDI:000954/draft
 identifier: DANDI:000954
 keywords: []
