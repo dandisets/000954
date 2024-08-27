@@ -83,7 +83,9 @@ description: 'The dataset contains neural activity from a period of open loop ca
   intended for FALCON models to validate submission format. Lastly, held-out-calib
   data are separate sessions of data from held-in-calib, but have much fewer trials,
   intended to be used for few-shot recalibration. Please bear in mind these factors
-  if making use of this dataset for purposes outside of the FALCON Benchmark.
+  if making use of this dataset for purposes outside of the FALCON Benchmark. Each
+  dataset split is considered one "subject" by the DANDI repository; only data from
+  one iBCI participant is included.
 
 
   By downloading this dataset, you are agreeing to terms of the following Data Use
